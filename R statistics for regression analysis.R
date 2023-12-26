@@ -1,3 +1,26 @@
+## COLLINEARITY ANALYSIS AND
+## STEPWISE REGRESSION PROCEDURES IN R
+## using R-Studio, which can be downloaded from: http://rstudio.org/
+## T.A. GROEN (TAGROEN@GMAIL.COM)
+## MARCH 2012
+
+## start with specifying the right folder
+setwd("d:\\regression")
+setwd("C:\\Users\\salam\\OneDrive\\Desktop\\Environmental modelling\\R statistics\\data2")
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+##
+## COLLINEARITY ANALYSIS
+##
+##|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+## For this exercise we will use the same data file that we used in the 
+## multiple regression exercise.
+d<-read.csv("Multiple linear regression Exercise.csv",header=TRUE, sep=",")
+
+## A first step would be to calculate pairwise correlation
+## coefficients using the cor.test(x,y) function
+## so for example:
+cor.test(d$CanopyCover,d$MaxHeight)
+cor(d2[,2:4])
 ## Describe the variable that defines the dataset
 ## check the data type and then describe and summarize the dataset
 d<-read.csv("tree_data.csv",header=TRUE, sep=",")
